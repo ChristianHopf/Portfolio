@@ -23,10 +23,10 @@ function GimmeCatsCard({}: Props) {
         /> */}
         <div className="flex flex-col w-full max-w-7xl items-center">
           <Link
-            href="/"
+            href="https://gimme-cats.vercel.app/"
             className="text-lg hover:text-[#F07167] hover:bg-white rounded-md mb-4 px-4 py-2"
           >
-            https://gimmecats.com
+            https://gimme-cats.vercel.app/
           </Link>
           <Carousel>
             {images.map((image, index) => (
