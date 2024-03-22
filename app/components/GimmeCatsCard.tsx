@@ -24,6 +24,8 @@ function GimmeCatsCard({}: Props) {
         <div className="flex flex-col w-full max-w-7xl items-center">
           <Link
             href="https://gimme-cats.vercel.app/"
+            rel="noopener noreferrer"
+            target="_blank"
             className="text-lg hover:text-[#F07167] hover:bg-white rounded-md mb-4 px-4 py-2"
           >
             https://gimme-cats.vercel.app/
