@@ -11,8 +11,8 @@ function GimmeCatsCard({}: Props) {
     "/static/images/gimmecats_breed.png",
   ];
   return (
-    <div className="flex flex-col mt-64 mb-16">
-      <h1 className="text-6xl text-[#49416D] mx-auto px-4 py-2">Gimme Cats</h1>
+    <div className="flex flex-col mt-32 md:mt-64 mb-16">
+      <h1 className="text-6xl text-[#49416D] mx-auto px-4 py-2 mb-2">Gimme Cats</h1>
       <div className="flex flex-col py-4 items-center rounded-lg shadow-md pb-4 bg-gradient-radial from-[#eff7f6] to-[#b2f7ef]">
         {/* <Image
           src={"/static/images/unico1.png"}
@@ -26,7 +26,7 @@ function GimmeCatsCard({}: Props) {
             href="https://gimme-cats.vercel.app/"
             rel="noopener noreferrer"
             target="_blank"
-            className="text-lg hover:text-[#F07167] hover:bg-white rounded-md mb-4 px-4 py-2"
+            className="btn text-lg px-4 py-2 mb-4 rounded-md hover:bg-[#F07167] hover:text-white"
           >
             https://gimme-cats.vercel.app/
           </Link>
@@ -52,7 +52,7 @@ function GimmeCatsCard({}: Props) {
         <span className="flex flex-row gap-4 px-12">
           <Link
             href={"/"}
-            className="text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
+            className="btn text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
           >
             View GitHub Repo
           </Link>
@@ -60,7 +60,7 @@ function GimmeCatsCard({}: Props) {
             href={"https://thecatapi.com/"}
             rel="noopener noreferrer"
             target="_blank"
-            className="text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
+            className="btn text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
           >
             The Cat API
           </Link>

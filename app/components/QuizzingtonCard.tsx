@@ -7,12 +7,14 @@ type Props = {};
 
 function QuizzingtonCard({}: Props) {
   const images = [
-    "/static/images/gimmecats_home.png",
-    "/static/images/gimmecats_breed.png",
+    "/static/images/quizzington_home.webp",
+    "/static/images/quizzington_quiz.webp",
+    "/static/images/quizzington_score.webp",
+    "/static/images/quizzington_profile.webp",
   ];
   return (
     <div className="flex flex-col mt-64 mb-16">
-      <h1 className="text-6xl text-[#49416D] mx-auto px-4 py-2">Gimme Cats</h1>
+      <h1 className="text-6xl text-[#49416D] mx-auto px-4 py-2 mb-2">Quizzington</h1>
       <div className="flex flex-col py-4 items-center rounded-lg shadow-md pb-4 bg-gradient-radial from-[#eff7f6] to-[#b2f7ef]">
         {/* <Image
           src={"/static/images/unico1.png"}
@@ -23,12 +25,12 @@ function QuizzingtonCard({}: Props) {
         /> */}
         <div className="flex flex-col w-full max-w-7xl items-center">
           <Link
-            href="https://gimme-cats.vercel.app/"
+            href="https://quizzington.vercel.app/"
             rel="noopener noreferrer"
             target="_blank"
-            className="text-lg hover:text-[#F07167] hover:bg-white rounded-md mb-4 px-4 py-2"
+            className="btn text-lg px-4 py-2 mb-4 rounded-md hover:bg-[#F07167] hover:text-white"
           >
-            https://gimme-cats.vercel.app/
+            https://quizzington.vercel.app/
           </Link>
           <Carousel>
             {images.map((image, index) => (
@@ -45,24 +47,15 @@ function QuizzingtonCard({}: Props) {
         </div>
 
         <p className="text-2xl px-16 py-8">
-          GimmeCats is a NextJS app that allows the user to search through a
-          database of cat breeds and view detailed information on each one via
-          The Cat API.
+          Quizzington is a NextJS app for creating and taking custom quizzes.
+          Data is stored and fetched with Vercel Postgres.
         </p>
         <span className="flex flex-row gap-4 px-12">
           <Link
-            href={"/"}
-            className="text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
+            href={"https://github.com/ChristianHopf/Quizzington"}
+            className="btn text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
           >
             View GitHub Repo
-          </Link>
-          <Link
-            href={"https://thecatapi.com/"}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
-          >
-            The Cat API
           </Link>
         </span>
       </div>
@@ -70,4 +63,4 @@ function QuizzingtonCard({}: Props) {
   );
 }
 
-export default GimmeCatsCard;
+export default QuizzingtonCard;
