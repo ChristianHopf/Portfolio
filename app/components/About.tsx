@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="flex flex-row gap-16">
       <Image
-        src="/static/images/gigachad.png"
+        src="/static/images/googlepfp.jpg"
         alt="me"
         width={500}
         height={500}
