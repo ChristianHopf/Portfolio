@@ -8,52 +8,37 @@ type Props = {};
 function SoulsTrackerCard({}: Props) {
   const images = ["/static/images/soulstracker_home.webp"];
   return (
-    <div className="flex flex-col py-32 mb-16">
-      <h1 className="text-6xl text-[#1D3557] mx-auto px-4 py-2 mb-2">
-        SoulsTracker
-      </h1>
-      <div className="flex flex-col py-4 items-center rounded-lg shadow-md pb-4 bg-[#A8DADC]">
-        {/* <Image
-          src={"/static/images/unico1.png"}
-          alt="Unico"
-          width={500}
-          height={500}
-          className="w-2/3 mx-auto rounded-xl"
-        /> */}
-        <div className="flex flex-col w-full max-w-7xl items-center">
+    <div className="flex flex-col md:flex-row w-full mx-auto justify-center py-16 mb-8 items-center rounded-md gap-4">
+      <div className="flex items-center">
+        <img key={0} src={images[0]} alt={`Image ${0}`} />
+      </div>
+      <div className="border-2 border-accent-secondary-light self-stretch"></div>
+      <div className="flex flex-col justify-between w-full px-2 max-w-xl self-stretch">
+        <div className="flex flex-col">
+          <h1 className="text-6xl font-semibold mb-2">SoulsTracker</h1>
+          <p className="text-white text-2xl px-2">
+            <span className="text-accent-secondary-light">SoulsTracker</span> is
+            an app built with{" "}
+            <span className="text-accent-secondary-light">EmberJS</span> and{" "}
+            <span className="text-accent-secondary-light">Express</span> that
+            displays essential data about a Steam user&apos;s progress in select
+            FromSoftware titles. Data is retrieved from the Steam Web API.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 items-start pb-2">
           <Link
             href="https://souls-tracker.vercel.app/"
             rel="noopener noreferrer"
             target="_blank"
-            className="btn text-lg px-4 py-2 mb-4 rounded-md hover:bg-[#E63946] hover:text-white"
+            className="text-bg-light bg-accent-primary-dark hover:bg-[#000] hover:text-bg-light text-xl font-semibold px-4 py-2 rounded-[4px]"
           >
             https://souls-tracker.vercel.app/
           </Link>
-          <Carousel>
-            {images.map((image, index) => (
-              <Image
-                key={index}
-                src={image}
-                alt={`Image ${index}`}
-                width={1824}
-                height={1026}
-                className=""
-              />
-            ))}
-          </Carousel>
-        </div>
-
-        <p className="text-[#1D3557] text-2xl px-16 py-8">
-          SoulsTracker is an app built with EmberJS and Express that displays
-          essential data about a Steam user&apos;s progress in select
-          FromSoftware titles. Data is retrieved from the Steam Web API.
-        </p>
-        <span className="flex flex-row gap-4 px-12">
           <Link
             href={"https://github.com/ChristianHopf/Soulstracker"}
             rel="noopener noreferrer"
             target="_blank"
-            className="btn text-lg px-4 py-2 rounded-md hover:bg-[#E63946] hover:text-white"
+            className="text-bg-light bg-accent-primary-dark hover:bg-[#000] hover:text-bg-light text-xl font-semibold px-4 py-2 rounded-[4px]"
           >
             View GitHub Repo
           </Link>
@@ -61,11 +46,11 @@ function SoulsTrackerCard({}: Props) {
             href={"https://developer.valvesoftware.com/wiki/Steam_Web_API"}
             rel="noopener noreferrer"
             target="_blank"
-            className="btn text-lg px-4 py-2 rounded-md hover:bg-[#E63946] hover:text-white"
+            className="text-bg-light bg-accent-primary-dark hover:bg-[#000] hover:text-bg-light text-xl font-semibold px-4 py-2 rounded-[4px]"
           >
             Steam Web API
           </Link>
-        </span>
+        </div>
       </div>
     </div>
   );
