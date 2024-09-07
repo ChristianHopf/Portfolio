@@ -4,12 +4,13 @@
 
 body {
   /* background-color: #eff7f6; */
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(239, 247, 246, 1) 100%
-  );
+  ); */
+  background-color: #F1FAEE;
 }
 
 html {

@@ -13,9 +13,11 @@ function QuizzingtonCard({}: Props) {
     "/static/images/quizzington_profile.webp",
   ];
   return (
-    <div className="flex flex-col mt-64 mb-16">
-      <h1 className="text-6xl text-[#49416D] mx-auto px-4 py-2 mb-2">Quizzington</h1>
-      <div className="flex flex-col py-4 items-center rounded-lg shadow-md pb-4 bg-gradient-radial from-[#eff7f6] to-[#b2f7ef]">
+    <div className="flex flex-col py-32 mb-16">
+      <h1 className="text-6xl text-[#1D3557] mx-auto px-4 py-2 mb-2">
+        Quizzington
+      </h1>
+      <div className="flex flex-col py-4 items-center rounded-lg shadow-md pb-4 bg-[#A8DADC]">
         {/* <Image
           src={"/static/images/unico1.png"}
           alt="Unico"
@@ -28,7 +30,7 @@ function QuizzingtonCard({}: Props) {
             href="https://quizzington.vercel.app/"
             rel="noopener noreferrer"
             target="_blank"
-            className="btn text-lg px-4 py-2 mb-4 rounded-md hover:bg-[#F07167] hover:text-white"
+            className="btn text-lg px-4 py-2 mb-4 rounded-md hover:bg-[#E63946] hover:text-white"
           >
             https://quizzington.vercel.app/
           </Link>
@@ -46,14 +48,16 @@ function QuizzingtonCard({}: Props) {
           </Carousel>
         </div>
 
-        <p className="text-2xl px-16 py-8">
+        <p className="text-[#1D3557] text-2xl px-16 py-8">
           Quizzington is a NextJS app for creating and taking custom quizzes.
           Data is stored and fetched with Vercel Postgres.
         </p>
         <span className="flex flex-row gap-4 px-12">
           <Link
             href={"https://github.com/ChristianHopf/Quizzington"}
-            className="btn text-lg px-4 py-2 rounded-md hover:bg-[#F07167] hover:text-white"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="btn text-lg px-4 py-2 rounded-md hover:bg-[#E63946] hover:text-white"
           >
             View GitHub Repo
           </Link>

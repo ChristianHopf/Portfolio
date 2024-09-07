@@ -11,8 +11,8 @@ export default function About() {
         className="rounded-full items-center shadow-2xl"
       />
       <div className="flex flex-col">
-        <h1 className="text-4xl md:text-8xl text-[#49416D] mt-8">Christian Hopf</h1>
-        <p className="text-2xl ms-4 md:text-4xl mt-2">Full stack developer</p>
+        <h1 className="text-[#1D3557] text-4xl md:text-8xl  mt-8">Christian Hopf</h1>
+        <p className="text-[#457B9D] text-2xl ms-4 md:text-4xl mt-2">Full stack developer</p>
       </div>
     </div>
   );
