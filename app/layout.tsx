@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "@next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+
+const Hack = localFont({
+  src: [
+    {
+      path: "../public/fonts/HACK-REGULAR.ttf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/HACK-BOLD.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-hack",
+});
 
 export const metadata: Metadata = {
   title: "Christian Hopf",
@@ -17,7 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body id='home' className={inter.className}>
+      <head></head>
+      <body id="home" className={`${Hack.variable} bg-bg-light`}>
         <Navbar />
         {children}
       </body>
