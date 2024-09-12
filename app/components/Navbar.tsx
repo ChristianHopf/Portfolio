@@ -6,14 +6,14 @@ export default function Navbar() {
   return (
     <div className="flex container top-0 z-10 justify-between items-center mx-auto px-6 py-4">
       <Link href={"#home"}>
-        <span className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors smooth-underline">
+        <span className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors nav-underline">
           Christian Hopf
         </span>
       </Link>
       <span className="flex gap-6">
         <Link
           href={"#works"}
-          className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors smooth-underline"
+          className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors nav-underline"
         >
           <p>Works</p>
         </Link>
@@ -21,7 +21,7 @@ export default function Navbar() {
           href={"https://github.com/ChristianHopf"}
           rel="noopener noreferrer"
           target="_blank"
-          className="text-stone-700 hover:text-black  text-2xl px-2 py-1 transition-colors smooth-underline"
+          className="text-stone-700 hover:text-black  text-2xl px-2 py-1 transition-colors nav-underline"
         >
           <IoLogoGithub className="text-3xl" />
         </Link>
@@ -29,7 +29,7 @@ export default function Navbar() {
           href={"https://www.linkedin.com/in/christian-hopf-codes/"}
           rel="noopener noreferrer"
           target="_blank"
-          className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors smooth-underline"
+          className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors nav-underline"
         >
           <FaLinkedin className="text-3xl" />
         </Link>
