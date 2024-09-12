@@ -71,15 +71,15 @@ function GimmeCatsCard({}: Props) {
   //   </div>
   // );
   return (
-    <div className="flex flex-col md:flex-row w-full mx-auto justify-center mt-8 py-16 mb-8 items-center rounded-md gap-4">
+    <div className="flex flex-col lg:flex-row w-full mx-auto justify-center py-16 mb-8 items-center rounded-md gap-4">
       <div className="flex items-center">
         <img key={0} src={images[0]} alt={`Image ${0}`} />
       </div>
-      <div className="border-2 border-accent-secondary-light self-stretch"></div>
-      <div className="flex flex-col justify-between w-full px-2 max-w-xl self-stretch">
+      <div className="border-2 border-[#0A84FF] self-stretch"></div>
+      <div className="flex flex-col justify-between w-full px-2 self-stretch">
         <div className="flex flex-col">
           <h1 className="text-6xl font-semibold mb-2">GimmeCats</h1>
-          <p className="text-white text-2xl px-2">
+          <p className="text-stone-700 text-2xl">
             <span className="text-accent-secondary-light">GimmeCats</span> is a{" "}
             <span className="text-accent-secondary-light">NextJS</span> app that
             allows the user to search through a database of cat breeds and view
@@ -91,7 +91,7 @@ function GimmeCatsCard({}: Props) {
             href="https://gimme-cats.vercel.app/"
             rel="noopener noreferrer"
             target="_blank"
-            className="text-bg-light bg-accent-primary-dark hover:bg-[#000] hover:text-bg-light text-xl font-semibold px-4 py-2 rounded-[4px]"
+            className="text-[#0A84FF] hover:text-bg-light text-xl link-underline"
           >
             https://gimme-cats.vercel.app/
           </Link>
@@ -99,7 +99,7 @@ function GimmeCatsCard({}: Props) {
             href={"https://github.com/ChristianHopf/GimmeCats"}
             rel="noopener noreferrer"
             target="_blank"
-            className="text-bg-light bg-accent-primary-dark hover:bg-[#000] hover:text-bg-light text-xl font-semibold px-4 py-2 rounded-[4px]"
+            className="text-[#0A84FF] hover:text-bg-light text-xl link-underline"
           >
             View GitHub Repo
           </Link>
@@ -107,7 +107,7 @@ function GimmeCatsCard({}: Props) {
             href={"https://thecatapi.com/"}
             rel="noopener noreferrer"
             target="_blank"
-            className="text-bg-light bg-accent-primary-dark hover:bg-[#000] hover:text-bg-light text-xl font-semibold px-4 py-2 rounded-[4px]"
+            className="text-[#0A84FF] hover:text-bg-light text-xl link-underline"
           >
             The Cat API
           </Link>
