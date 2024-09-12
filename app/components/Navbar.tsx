@@ -4,17 +4,16 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <div className="bg-accent-primary-light flex sticky top-0 z-10 justify-end items-center px-6 py-4 gap-6">
+    <div className="flex container top-0 z-10 justify-between items-center mx-auto px-6 py-4">
+      <Link href={"#home"}>
+        <span className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors smooth-underline">
+          Christian Hopf
+        </span>
+      </Link>
       <span className="flex gap-6">
         <Link
-          href={"#home"}
-          className="text-bg-light hover:bg-[#000000] hover:text-bg-light text-2xl font-semibold px-4 py-2 rounded-[4px]"
-        >
-          <p>Home</p>
-        </Link>
-        <Link
           href={"#works"}
-          className="text-bg-light hover:bg-[#000000] hover:text-bg-light text-2xl font-semibold px-4 py-2 rounded-[4px]"
+          className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors smooth-underline"
         >
           <p>Works</p>
         </Link>
@@ -22,7 +21,7 @@ export default function Navbar() {
           href={"https://github.com/ChristianHopf"}
           rel="noopener noreferrer"
           target="_blank"
-          className="text-bg-light hover:bg-[#000000] hover:text-bg-light text-2xl font-semibold px-4 py-2 rounded-[4px]"
+          className="text-stone-700 hover:text-black  text-2xl px-2 py-1 transition-colors smooth-underline"
         >
           <IoLogoGithub className="text-3xl" />
         </Link>
@@ -30,7 +29,7 @@ export default function Navbar() {
           href={"https://www.linkedin.com/in/christian-hopf-codes/"}
           rel="noopener noreferrer"
           target="_blank"
-          className="text-bg-light hover:bg-[#000000] hover:text-bg-light text-2xl font-semibold px-4 py-2 rounded-[4px]"
+          className="text-stone-700 hover:text-black text-2xl px-2 py-1 transition-colors smooth-underline"
         >
           <FaLinkedin className="text-3xl" />
         </Link>

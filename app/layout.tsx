@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body id="home" className={`${Hack.variable} bg-bg-light`}>
+      <body id="home" className={`${Hack.variable} bg-white`}>
         <Navbar />
         {children}
       </body>
