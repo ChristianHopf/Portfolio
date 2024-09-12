@@ -10,9 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-hack)"],
-      },
+      // fontFamily: {
+      //   sans: ["var(--font-hack)"],
+      // },
       // backgroundImage: {
       //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       //   "gradient-conic":
