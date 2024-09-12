@@ -9,11 +9,11 @@ import Navbar from "./components/Navbar";
 const Hack = localFont({
   src: [
     {
-      path: "../public/fonts/HACK-REGULAR.ttf",
+      path: "../public/fonts/hack-regular.ttf",
       weight: "400",
     },
     {
-      path: "../public/fonts/HACK-BOLD.ttf",
+      path: "../public/fonts/hack-bold.ttf",
       weight: "700",
     },
   ],
