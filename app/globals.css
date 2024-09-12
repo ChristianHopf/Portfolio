@@ -49,3 +49,14 @@ html {
 .dividing-line {
   transform: translateX(11%);
 }
+.link-underline,
+.nav-underline{
+  border-bottom: 1px solid transparent;
+  transition: 200ms;
+}
+.link-underline:hover{
+  border-color: #0A84FF;
+}
+.nav-underline:hover{
+  border-color: black;
+}
