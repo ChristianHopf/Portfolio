@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col ">
       <div className="container py-8 mx-auto">
-        <section className="mb-24">
+        <section className="mb-6 md:mb-24">
           <About />
         </section>
         <section id="works" className="relative flex flex-col w-full mb-4">
