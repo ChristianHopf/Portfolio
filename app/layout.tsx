@@ -7,17 +7,8 @@ import Navbar from "./components/Navbar";
 // const inter = Inter({ subsets: ["latin"] });
 
 const Hack = localFont({
-  src: [
-    {
-      path: "../public/fonts/hack-regular.ttf",
-      weight: "400",
-    },
-    {
-      path: "../public/fonts/hack-bold.ttf",
-      weight: "700",
-    },
-  ],
-  variable: "--font-hack",
+  src: './hack-regular.ttf',
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body id="home" className={`${Hack.variable} bg-white`}>
+      <body id="home" className={`${Hack.className} bg-white`}>
         <Navbar />
         {children}
       </body>
