@@ -16,10 +16,9 @@
   font-style: normal;
 } */
 
-body {
+/* body {
   font-family: 'Hack', sans-serif;
-  /* background-color: #00377E; */
-}
+} */
 
 html {
   scroll-behavior: smooth !important;
