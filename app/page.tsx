@@ -6,8 +6,8 @@ import SoulsTrackerCard from "./components/SoulsTrackerCard";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col ">
-      <div className="container py-8 mx-auto">
+    <main className="flex min-h-screen flex-col mt-8 xl:mt-16">
+      <div className="container mx-auto">
         <section className="mb-6 md:mb-24">
           <About />
         </section>
