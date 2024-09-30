@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Footer from "./components/Footer";
 import GimmeCatsCard from "./components/GimmeCatsCard";
+import PKCard from "./components/PKCard";
 import QuizzingtonCard from "./components/QuizzingtonCard";
 import SoulsTrackerCard from "./components/SoulsTrackerCard";
 
@@ -13,6 +14,7 @@ export default function Home() {
         </section>
         <section id="works" className="relative flex flex-col w-full mb-4">
           <SoulsTrackerCard />
+          <PKCard />
           <QuizzingtonCard />
           <GimmeCatsCard />
           {/* <div className="dividing-line absolute inset-2 flex justify-center items-start">
