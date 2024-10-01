@@ -17,7 +17,7 @@ function QuizzingtonCard({}: Props) {
         <img key={0} src={images[0]} alt={`Image ${0}`} />
       </div>
       <div className="border-2 border-[#0A84FF] self-stretch mx-6 md:mx-0"></div>
-      <div className="flex flex-col justify-between xl:w-full mx-6 md:mx-0">
+      <div className="flex flex-col justify-between self-stretch xl:w-full mx-6 md:mx-0">
         <div className="flex flex-col">
           <h1 className="text-4xl md:text-5xl font-semibold mb-2">
             Quizzington
