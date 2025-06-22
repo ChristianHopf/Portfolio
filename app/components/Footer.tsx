@@ -4,7 +4,7 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <div className="flex justify-center pt-8">
+    <div className="flex justify-center pt-8 mb-2">
       <span className="text-stone-700">
         I also customize{" "}
         <Link
