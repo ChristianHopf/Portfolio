@@ -25,6 +25,14 @@ function CruxCard({}: Props) {
         </div>
         <div className="flex flex-col items-start gap-4 mt-4 pb-2">
           <Link
+            href={"https://crux-next.vercel.app"}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-[#0A84FF] hover:text-bg-light text-lg xl:text-xl link-underline"
+          >
+            https://crux-next.vercel.app
+          </Link>
+          <Link
             href={"https://github.com/ChristianHopf/Crux"}
             rel="noopener noreferrer"
             target="_blank"
