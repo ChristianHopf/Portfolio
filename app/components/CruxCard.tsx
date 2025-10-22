@@ -14,7 +14,7 @@ function CruxCard({}: Props) {
       <div className="border-2 border-[#0A84FF] self-stretch mx-6 md:mx-0"></div>
       <div className="flex flex-col justify-between self-stretch xl:w-full mx-6 md:mx-0">
         <div className="flex flex-col">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-2">Crux</h1>
+          <h1 className="text-stone-700 text-4xl md:text-5xl font-semibold mb-2">Crux</h1>
           <p className="text-stone-700 text-xl md:text-2xl">
             <span className="text-accent-secondary-light">Crux</span> is a
             Linux-native 3D game engine written in C, built with the OpenGL
